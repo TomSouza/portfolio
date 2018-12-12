@@ -18,17 +18,40 @@
 
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+        {% if page.url == "/" or page.url == "/about/" %}
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
         
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          {% if site.logo %}
+            <img src="{{site.logo | relative_url}}" alt="Logo" />
+          {% endif %}
+
+          <p>{{ site.description }}</p>
+        
+          {% for item in site.data.socialmedia %}
+          <p class="view"> <img style="width: 26px" src="{{ item.icon }}" alt="Logo" /> <a href="{{ item.url }}" target="_blank"> {{ item.desc }} </a></p>
+          {% endfor %}
+
+        {% else %}       
+        
+          {% if page.image %}
+            <img src="{{page.image | relative_url}}" alt="Logo" />
+          {% endif %}
+
+          {% if page.platform %}
+          <p>Plataforma: {{ page.platform }}</p>
+          {% endif %}
+
+          {% if page.operation %}
+          <p>Atuação: {{ page.operation }}</p>
+          {% endif %}
+
+          <p></p>
+          {% if page.host_url %}
+          <p><a href="{{ page.host_url }}" target="_blank"> Pagina do jogo </a></p> 
+          {% endif %}
+
         {% endif %}
-
-        <p>{{ site.description }}</p>
-
-        {% for item in site.data.socialmedia %}
-        <p class="view"> <img style="width: 26px" src="{{ item.icon }}" alt="Logo" /> <a href="{{ item.url }}" target="_blank"> {{ item.desc }} </a></p>
-        {% endfor %}
 
       </header>
       <section>
