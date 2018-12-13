@@ -47,8 +47,12 @@
           {% endif %}
 
           <p></p>
-          {% if page.host_url %}
-          <p><a href="{{ page.host_url }}" target="_blank"> Pagina do jogo </a></p> 
+          {% if page.host-url %}
+          <p><a href="{{ page.host-url }}" target="_blank"> Pagina do jogo </a></p> 
+          {% endif %}
+
+          {% if page.online-play %}
+          <p><a href="{{ page.online-play }}" target="_blank"> Jogar </a></p>
           {% endif %}
 
         {% endif %}
