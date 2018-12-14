@@ -54,6 +54,40 @@ nav a {
     margin-right: 30px;
 }
 
+p {
+    text-align: justify;
+}
+
+.post-image {
+    position: relative;
+    text-align: center;
+    width: 90%;
+    padding: 0 5%;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.post-image i {    
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase {
+    width: 90%;
+    height: 130px;
+    padding: 0 5%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.showcase img {
+    width: 100%;    
+}
+
 @media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }
   header, section, footer { float: none; position: static; width: auto; }
   header { padding-right: 320px; }
