@@ -2,7 +2,6 @@
 ---
 
 {% for post in site.posts %}
-    <li>
       <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
 
       <div class="showcase">
@@ -10,5 +9,4 @@
       </div>
 
       <p>{{ post.excerpt }}</p>
-    </li>
 {% endfor %}
