@@ -22,6 +22,10 @@ section img {
     padding-bottom: 10px;
 }
 
+footer {
+    bottom: 30px;
+}
+
 body {
     background-color: rgb(252, 252, 252);
     padding-top: 0px;
@@ -68,9 +72,13 @@ nav a {
 
 .post-image i {    
     position: absolute;
-    bottom: -25px;
+    bottom: -30px;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.post-index h2 {
+    color: #267CB9;
 }
 
 section p {
