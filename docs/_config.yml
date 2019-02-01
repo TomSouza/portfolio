@@ -21,11 +21,11 @@ title: Thomas A. de Souza
 email: thomas.aes.31@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Desenvolvedor de jogos focado em programação.
-baseurl: "portifolio" # the subpath of your site, e.g. /blog
+baseurl: "portfolio" # the subpath of your site, e.g. /blog
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tomsouza.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: TomSouza
-repository: TomSouza/Portifolio
+repository: TomSouza/Portfolio
 
 excerpt_separator: <!--excerpt-->
 
