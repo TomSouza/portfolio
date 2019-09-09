@@ -15,7 +15,8 @@
 }
 
 header {
-    width: 300px;
+    width: 275px;
+    position: sticky;
 }
 
 section img {
@@ -24,6 +25,7 @@ section img {
 
 footer {
     bottom: 35px;
+    position: static;
 }
 
 body {
