@@ -16,17 +16,19 @@
 
     {% include navigation.html %}
 
-    <div class="wrapper">
+    <div class="grid-container">
       <header>
 
         {% if page.url == "/" or page.url == "/about/" %}
 
+        <div id="titleDiv">
           {%if page.url != "/about/" %}
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           {% endif %}
+        </div>
         
           {% if site.logo %}
-            <img src="{{site.logo | relative_url}}" alt="Logo" />
+            <img class="photo" src="{{site.logo | relative_url}}" alt="Logo" />
           {% endif %}
 
           <p>{{ site.description }}</p>
@@ -36,10 +38,12 @@
           {% endfor %}
 
         {% else %}       
-        
+
+        <div id="titleDiv">
           {% if page.logo %}
             <img src="{{page.logo | relative_url}}" alt="Logo" />
           {% endif %}
+        </div>
 
           {% if page.platform %}
           <p>Plataforma: {{ page.platform }}</p>
@@ -69,18 +73,15 @@
         {% endif %}
 
       </header>
-      <section>
-
-      {{ content }}
-
-      </section>
       <footer>
         {% if site.github.is_project_page %}
-        <p>Esse site é mantido por <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        Esse site é mantido por <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
         {% endif %}
         <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
       </footer>
+      <section>  {{ content }} </section>
     </div>
+    
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>

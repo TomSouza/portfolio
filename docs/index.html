@@ -2,13 +2,13 @@
 ---
 
 {% for post in site.posts %}
-    <a class="post-index" href="{{ post.url | absolute_url }}"><h2>{{ post.title }}</h2>
+<div class="posts">
+    <a class="post-index" href="{{ post.url | absolute_url }}"><h2>{{ post.title }}</h2></a>
+    <div class="showcase">
+      <img src="{{ "/assets/images/" | append: post.image-path | append: "/main.png" | relative_url}}">
+    </div>
 
-      <div class="showcase">
-          <img src="{{ "/assets/images/" | append: post.image-path | append: "/main.png" | relative_url}}">
-      </div>
-    </a>
-
-    <p>{{ post.excerpt }}</p>
-    <hr>
+    <div class="postExcerpt">{{ post.excerpt }}</div>
+</div>
+<hr>
 {% endfor %}
