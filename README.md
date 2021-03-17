@@ -1,3 +1,3 @@
 # portifolio
 
-[GH Pages] (https://tomsouza.github.io/portfolio/)
+[GH Pages](https://tomsouza.github.io/portfolio/)

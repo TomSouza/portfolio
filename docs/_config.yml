@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 logo: /assets/images/logo.jpg
-logoBorder: /assets/images/gold-picture-frame-6.png
 
 github.owner_url: https://github.com/TomSouza
 
