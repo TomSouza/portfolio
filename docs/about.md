@@ -15,7 +15,7 @@ Junto a dois amigos formamos o grupo [Scroplus](http://scroplus.itch.io/), com o
 - Unity 3D e 2D: Intermediário
 - Linguagens:
     - C++: Iniciante
-    - C#: Acançado
+    - C#: Avançado
     - PHP: Avançado
     - JS: Intermediário
 - Línguas:
